@@ -1,0 +1,17 @@
+.nav-pills .nav-link {
+  color: #4a1436;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000000;
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #7d7373;
+  color: white;
+}
+
+#myAudio {
+  margin-left: auto;
+}
