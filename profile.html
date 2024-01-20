@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-10" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="images/wiz_logo/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>My Diary</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/icon.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body
+    onload="initAudio()"
+    style="
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <script src="js/header.js"></script>
+    <script>
+      insertHeader();
+    </script>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-10 mb-1 main-content">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+            style="background-color: white"
+          >
+            <div class="profile-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="images/home_profile.jpg"
+                    alt="Profile Image"
+                    class="rounded-circle mb-4 profile-img"
+                  />
+                </div>
+
+                <div class="col-md-8">
+                  <p class="name-label">My Name</p>
+                  <div class="about-section">
+                    <p class="introduction-text">자기소개가 표시됩니다<br /></p>
+                  </div>
+
+                  <div class="contact-info">
+                    <div class="contact-item">
+                      <img class="icon-call" src="./assets/icon-call-nr5.png" />
+                      <p class="phone-number">
+                        <span class="phone-label">Tel</span>
+                        <span class="phone">00000000000</span>
+                      </p>
+                    </div>
+                    <div class="contact-item">
+                      <img
+                        class="icon-email"
+                        src="./assets/icon-maill-nH7.png"
+                      />
+                      <p class="email-address">
+                        <span class="email-label">Email</span>
+                        <span class="email">google@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="section-divider" />
+                  <p class="settings-reminder">
+                    변경이 필요하면
+                    <a href="setting.html" class="settings-link">설정</a> 메뉴로
+                    이동해 주세요
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/asideMenu.js"></script>
+        <script>
+          insertAside();
+        </script>
+      </div>
+    </div>
+
+    <script src="js/csvDownload.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/loadData.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      insertFooter();
+    </script>
+    <script>
+      document
+        .getElementById("settingButton")
+        .addEventListener("click", function () {
+          window.location.href = "setting.html";
+        });
+    </script>
+  </body>
+</html>

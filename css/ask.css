@@ -1,0 +1,44 @@
+.ask-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.ask-title {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.ask-content {
+  margin-top: 1em;
+}
+
+.inquiry-label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.inquiry-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.inquiry-submit {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inquiry-submit:hover {
+  background-color: #0056b3;
+}

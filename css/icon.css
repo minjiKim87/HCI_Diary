@@ -1,0 +1,22 @@
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-info a {
+    color: #616161;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media-icon {
+    width: 32px;
+    height: 32px;
+    background: #DAB3C8;
+  }
+  

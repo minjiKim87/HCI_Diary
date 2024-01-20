@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-10" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="icon"
@@ -9,66 +9,91 @@
       type="image/x-icon"
     />
     <title>My Diary</title>
+
+
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <script src="js/music.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-  <body onload="initAudio()">
-    <header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-    >
-      <a
-        href="home.html"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-      >
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4"
-          ><img
-            src="images/wiz_logo/android-icon-192x192.png"
-            alt="Diary Icon"
-            width="24"
-            height="24"
+  <body
+    onload="initAudio()"
+    style="
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <script src="js/header.js"></script>
+    <script>
+      insertHeader();
+    </script>
+
+    <div class="container mt-5 " >
+      <div class="row">
+        <div id="homePage" class="col-md-10 mb-1 main-content">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"   style="background-color: white;"
+          >
+          <div class="section main-content-2">
+            <img
+            src="images/home_profile.jpg"
+            alt="Profile Image"
+            class="rounded-circle mb-4 profile-img"
           />
-          KMJ Diary</span
-        >
-      </a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a href="home.html" class="nav-link" aria-current="page">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a href="new-record.html" class="nav-link">새로운 일기</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
+          <h2 class="diary-title">KMJ Diary</h2>
+          <p class="diary-subtitle">2023 HTML & JS Diary</p>
+          <p class="student-id">2019320087 KMJ</p>
+          <p class="password-instruction">
+            비밀번호는 <strong>config.csv</strong> 파일에서 확인해주시길 바랍니다.
+          </p>
+          <p class="csv-download-instruction">
+            브라우저를 닫기 전, csv를 다운받아 로컬 파일을 갱신해주십시오.
+          </p>
+          <div class="button-container">
+            <button id="downloadCSV" class="button">다운로드</button>
+           
 
-    <footer
-      class="d-flex flex-column align-items-center justify-content-center py-3 my-4 border-top"
-    >
-      <div>
-        <audio id="myAudio" loop controls>
-          <source src="/data/music.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
-      <div class="d-flex align-items-center mb-2">
-        <span class="text-muted">© 2023 KMJ087</span>
-      </div>
-    </footer>
+            </button>
+          
+          </div>
+            </div>
+          </div>
+       
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+        
+        </div>
+        <script src="js/asideMenu.js"></script>
+        <script>
+          insertAside();
+        </script>
+      </div>
+    </div>
+   
+
+      <script src="js/csvDownload.js"></script>
+      <script src="js/music.js"></script>
+      <script src="js/loadData.js"></script>
+      <script src="js/search.js"></script>
+      <script src="js/footer.js"></script>
+      <script>
+        insertFooter();
+      </script>
+ 
   </body>
 </html>

@@ -6,9 +6,12 @@ function initAudio() {
     audio.currentTime = parseFloat(currentTime);
   }
 
-  audio.play();
-
   audio.addEventListener("timeupdate", function () {
     localStorage.setItem("audioTime", audio.currentTime);
   });
+
+  const playButton = audio.querySelector("[title='Play']");
+  if (playButton) {
+    playButton.click();
+  }
 }

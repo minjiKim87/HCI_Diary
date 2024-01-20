@@ -1,0 +1,17 @@
+.emotion-box {
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emotion-box:hover {
+  transform: scale(1.05);
+}
+
+.emotion-box.active {
+  border-color: #000;
+  font-weight: bold;
+}
