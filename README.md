@@ -22,3 +22,15 @@
 - **Frontend**: HTML, JavaScript
 - **Design**: Figma를 사용하여 UI/UX 디자인
 
+
+<table>
+  <tr>
+    <td><img src="https://github.com/minjiKim87/HCI_Diary/assets/68892132/b7991ce2-5d49-49a8-9a1d-4473c6582fc9" width="300"/></td>
+    <td><img src="https://github.com/minjiKim87/HCI_Diary/assets/68892132/807c67bc-054a-4901-9eae-c069289bce69" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/minjiKim87/HCI_Diary/assets/68892132/18531103-0f43-44cf-ae57-a2fd3fbc90b3" width="300"/></td>
+    <td><img src="https://github.com/minjiKim87/HCI_Diary/assets/68892132/7a3beb77-42f7-4a74-9796-442107300e1f" width="300"/></td>
+  </tr>
+</table>
+
